@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Frost Giant" nameDescription="a frost giant" race="blood" experience="150" speed="195" manacost="490">
+	<health now="270" max="270"/>
+	<look type="257" corpse="7330"/>
+	<targetchange interval="2000" chance="5"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag staticattack="50"/>
+		<flag lightlevel="0"/>
+		<flag lightcolor="0"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="-14" max="-100"/>
+	</attacks>
+	<defenses armor="22" defense="23"/>
+	<elements>
+		<element icePercent="100"/>
+	</elements>
+	<voices interval="2000" chance="5">
+		<voice sentence="Hmm Humansoup"/>
+		<voice sentence="Stand still ya tasy snack!"/>
+		<voice sentence="Joh Thun!"/>
+		<voice sentence="Brore Smode!"/>
+		<voice sentence="Horre Sjan Flan!"/>
+		<voice sentence="Forle Bramma!"/>
+	</voices>
+	
+</monster>

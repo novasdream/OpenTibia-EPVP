@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Island Troll" nameDescription="an island troll" race="blood" experience="20" speed="190" manacost="290">
+	<health now="50" max="50"/>
+	<look type="282" corpse="7930"/>
+	<targetchange interval="5000" chance="20"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="1"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="1"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag staticattack="90"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="15"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="19" attack="12"/>
+	</attacks>
+	<defenses armor="7" defense="9"/>
+	<voices interval="5000" chance="10">
+		<voice sentence="Hmmm, turtles"/>
+		<voice sentence="Hmmm, dogs"/>
+		<voice sentence="Hmmm, wormds"/>
+		<voice sentence="Groar"/>
+		<voice sentence="Gruntz!"/>
+	</voices>
+	
+</monster>

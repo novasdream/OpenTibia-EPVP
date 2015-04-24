@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<globalevents>
+	<globalevent name="botmanager" interval="1" event="script" value="botmanager.lua"/>
+	<globalevent name="botmanagerStart" type="start" event="script" value="botmanager.lua"/>
+	<globalevent name="save" interval="3600" event="script" value="save.lua"/>
+	<globalevent name="warsave" interval="300" event="script" value="warsave.lua"/>
+	<globalevent name="topfraggers" interval="180" event="script" value="topfraggers.lua"/>
+	<globalevent name="serverstart" type="start" event="script" value="start.lua"/>
+	
+
+	<!-- <globalevent name="timer_example" time="21:35" event="script" value="my_script.lua"/> -->
+</globalevents>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Worker Golem" nameDescription="a worker golem" race="energy" experience="1250" speed="270" manacost="0">
+	<health now="1400" max="1400"/>
+	<look type="304" corpse="9801"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="-0" max="-230"/>
+		<attack name="physical" interval="1000" chance="14" range="7" min="-0" max="-95">
+			<attribute key="shootEffect" value="explosion"/>
+		</attack>
+	</attacks>
+	<defenses armor="40" defense="45">
+		<defense name="healing" interval="1000" chance="20" min="100" max="220">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element earthPercent="50"/>
+		<element holyPercent="30"/>
+		<element firePercent="-10"/>
+		<element energyPercent="-5"/>
+		<element physicalPercent="40"/>
+		<element icePercent="25"/>
+		<element deathPercent="30"/>
+	</elements>
+	<immunities>
+		<immunity invisible="1"/>
+		<immunity paralyze="1"/>
+	</immunities>
+	<voices interval="2500" chance="10">
+		<voice sentence="INTRUDER ALARM!"/>
+		<voice sentence="klonk klonk klonk"/>
+		<voice sentence="Rrrtttarrrttarrrtta"/>
+		<voice sentence="Awaiting orders."/>
+		<voice sentence="Secret objective complete."/>
+	</voices>
+	
+</monster>

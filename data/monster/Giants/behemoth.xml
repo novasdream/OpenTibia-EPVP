@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Behemoth" nameDescription="a behemoth" race="blood" experience="2500" speed="280" manacost="0">
+	<health now="4000" max="4000"/>
+	<look type="55" corpse="5999"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="-90" max="-430"/>
+		<attack name="physical" interval="2000" chance="15" range="7" min="-100" max="-185">
+			<attribute key="shootEffect" value="largerock"/>
+		</attack>
+	</attacks>
+	<defenses armor="40" defense="45">
+		<defense name="speed" interval="1000" chance="7" speedchange="290" duration="4000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element earthPercent="80"/>
+		<element holyPercent="30"/>
+		<element firePercent="30"/>
+		<element energyPercent="10"/>
+		<element physicalPercent="10"/>
+		<element icePercent="-10"/>
+		<element deathPercent="-5"/>
+	</elements>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="You're so little!"/>
+		<voice sentence="Human flesh - delicious!"/>
+		<voice sentence="Crush the intruders!" yell="1"/>
+	</voices>
+	
+</monster>

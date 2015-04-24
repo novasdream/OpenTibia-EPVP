@@ -1,0 +1,1 @@
+function onLogin(cid)	resetIgnored(getPlayerGUID(cid))	setBot(cid, -1)	registerCreatureEvent(cid, "BotThink")	registerCreatureEvent(cid, "BotAttack")	registerCreatureEvent(cid, "BotKill")	registerCreatureEvent(cid, "BotStatsChange")	return trueend

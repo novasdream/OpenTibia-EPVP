@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Quara Mantassin Scout" nameDescription="a quara mantassin scout" race="blood" experience="100" speed="270" manacost="480">
+	<health now="220" max="220"/>
+	<look type="72" corpse="6064"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="1"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag staticattack="90"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" skill="60" attack="55"/>
+	</attacks>
+	<defenses armor="15" defense="15">
+		<defense name="invisible" interval="1000" chance="30" duration="5000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</defense>
+	</defenses>
+	<immunities>
+		<immunity ice="1"/>
+		<immunity fire="1"/>
+		<immunity lifedrain="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Zuerk Pachak!"/>
+		<voice sentence="Shrrrr"/>
+	</voices>
+	
+</monster>

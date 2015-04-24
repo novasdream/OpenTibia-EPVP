@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Quara Hydromancer" nameDescription="a quara hydromancer" race="blood" experience="800" speed="520" manacost="0">
+	<health now="1100" max="1100"/>
+	<look type="47" corpse="6066"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag staticattack="90"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="30"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" skill="65" attack="65"/>
+		<attack name="poison" interval="1000" chance="12" length="8" spread="10" min="-100" max="-160">
+			<attribute key="areaEffect" value="bubbles"/>
+		</attack>
+		<attack name="poison" interval="1000" chance="20" range="7" radius="3" target="0" min="-55" max="-105">
+			<attribute key="areaEffect" value="bubbles"/>
+		</attack>
+	</attacks>
+	<defenses armor="15" defense="18"/>
+	<elements>
+		<element firePercent="100"/>
+		<element icePercent="100"/>
+		<element earthPercent="-12"/>
+		<element energyPercent="-25"/>
+	</elements>
+	<immunities>
+		<immunity lifedrain="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="Qua hah tsh!"/>
+		<voice sentence="Teech tsha tshul!"/>
+		<voice sentence="Quara tsha Fach!"/>
+		<voice sentence="Tssssha Quara!"/>
+		<voice sentence="Blubber."/>
+		<voice sentence="Blup."/>
+	</voices>
+	
+</monster>

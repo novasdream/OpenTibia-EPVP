@@ -1,0 +1,113 @@
+*****************************************************
+Error report - Thu Apr 23 13:46:14 2015
+
+Compiler Info - GNU C++ version 3.4.5 (mingw special)
+Compilation Date - Dec  8 2013 11:50:50
+
+Memory load: 72
+Total phys: 3144184 K available phys: 860456 K
+Start time: 23-4-2015  15:28:7
+Kernel time: 0:0:3.291
+User time: 0:2:34.425
+Threads: 4
+
+Exception: 0xc0000005 at eip = 0xf49f40
+eax = 0
+ebx = 0
+ecx = 0
+edx = 0
+esi = 0x1
+edi = 0
+ebp = 0
+esp = 0x2f7ec7c -> 0
+efl = 0x10246
+
+---Stack Trace---
+From: 0x2f7ec7c to: 0x2f80000
+0x2f7ec7c | 0
+0x2f7ec80 | 0xb08b5e -> 0x35460000
+0x2f7ec84 | 0xb06fd0 -> 0
+0x2f7ec88 | 0x4
+0x2f7ec8c | 0
+0x2f7ec90 | 0
+0x2f7ec94 | 0
+0x2f7ec98 | 0
+0x2f7ec9c | 0
+0x2f7eca0 | 0
+0x2f7eca4 | 0
+0x2f7eca8 | 0
+0x2f7ecac | 0
+0x2f7ecb0 | 0
+0x2f7ecb4 | 0
+0x2f7ecb8 | 0x1f380188
+0x2f7ecbc | 0x10e6ae5b -> 0
+0x2f7ecc0 | 0x270
+0x2f7ecc4 | 0x2f7ecd4 -> 0x39a4cfcf
+0x2f7ecc8 | 0xda9ea88 -> 0xda36078
+0x2f7eccc | 0xda9ea88 -> 0xda36078
+0x2f7ecd0 | 0x9f4d50 -> 0
+0x2f7ecd4 | 0x39a4cfcf
+0x2f7ecd8 | 0xf4cdd5 -> 0x830cc483
+0x2f7ecdc | 0xb06fd0 -> 0
+0x2f7ece0 | 0xb06fd0 -> 0
+0x2f7ece4 | 0
+0x2f7ece8 | 0xb08b14 -> 0x6573746f
+0x2f7ecec | 0xcea
+0x2f7ecf0 | 0x2f7f61c -> 0x2f7f63c
+0x2f7ecf4 | 0xb06fd0 -> 0
+0x2f7ecf8 | 0x9f4d50 -> 0
+0x2f7ecfc | 0x2f7edd8 -> 0x2f7f06c
+0x2f7ed00 | 0x77171985 -> 0x8b55ff8b
+0x2f7ed04 | 0xc292360 -> 0
+0x2f7ed08 | 0
+0x2f7ed0c | 0x12e38c
+0x2f7ed10 | 0x9f4d38 -> 0x9e1c28
+0x2f7ed14 | 0
+0x2f7ed18 | 0x20
+0x2f7ed1c | 0x7712e046 -> 0x8b55ff8b
+0x2f7ed20 | 0x756ed0ef -> 0xff3e8343
+0x2f7ed24 | 0x100003fc -> 0
+0x2f7ed28 | 0
+0x2f7ed2c | 0x756ed255 -> 0x8ac08559
+0x2f7ed30 | 0x2e
+0x2f7ed34 | 0x756ed272 -> 0xfffc50e9
+0x2f7ed38 | 0x1a4
+0x2f7ed3c | 0x10001662 -> 0x8308488b
+0x2f7ed40 | 0xda9ea88 -> 0xda36078
+0x2f7ed44 | 0
+0x2f7ed48 | 0xdc0c8f8 -> 0xa20510
+0x2f7ed4c | 0x1000143f -> 0x3d08c483
+0x2f7ed50 | 0xda9ea88 -> 0xda36078
+0x2f7ed54 | 0
+0x2f7ed58 | 0x59a6b6 -> 0xff67dd9
+0x2f7ed58  LuaScriptInterface::popNumber(lua_State*)(0x59a664)
+0x2f7ed5c | 0xda9ea88 -> 0xda36078
+0x2f7ed60 | 0
+0x2f7ed64 | 0
+0x2f7ed68 | 0xda9ea88 -> 0xda36078
+0x2f7ed6c | 0xda9ea88 -> 0xda36078
+0x2f7ed70 | 0x250
+0x2f7ed74 | 0x2f7ed84 -> 0x2f7ef54
+0x2f7ed78 | 0x591ba4 -> 0x575c085
+0x2f7ed78  ScriptEnviroment::getPlayerByUID(unsigned int)(0x591b70)
+0x2f7ed7c | 0xf42ee20 -> 0x9e282c
+0x2f7ed88  LuaScriptInterface::internalGetPlayerInfo(lua_State*, LuaScriptInterface::PlayerInfo_t)(0x5a01e2)
+0x2f7ee98  ScriptEnviroment::getThingByUID(unsigned int)(0x591884)
+0x2f7f5e0  DatabaseMySQL::connect()(0x47876c)
+0x2f7f620  DatabaseMySQL::reconnect()(0x4788dc)
+0x2f7f640  DatabaseMySQL::executeQuery(std::string const&)(0x477d4e)
+0x2f7f650  _Database::getInstance()(0x473a0e)
+0x2f7f670  LuaScriptInterface::luaDatabaseExecute(lua_State*)(0x5fbd64)
+0x2f7f6f4  LuaScriptInterface::luaDatabaseExecute(lua_State*)(0x5fbd64)
+0x2f7f96c  LuaScriptInterface::callFunction(unsigned int)(0x5992e0)
+0x2f7f9f0  LuaScriptInterface::callFunction(unsigned int)(0x5992e0)
+0x2f7fa2c  LuaScriptInterface::pushFunction(int)(0x5984d4)
+0x2f7fa4c  GlobalEvent::executeThink(unsigned int, unsigned int, unsigned int)(0x77b84a)
+0x2f7fae0  GlobalEvent::executeThink(unsigned int, unsigned int, unsigned int)(0x77b84a)
+0x2f7fc0c  GlobalEvents::think(unsigned int)(0x779692)
+0x2f7fca0  GlobalEvents::think(unsigned int)(0x779692)
+0x2f7fd6c  OutputMessagePool::startExecutionFrame()(0x6719e2)
+0x2f7fdac  Dispatcher::dispatcherThread(void*)(0x738140)
+0x2f7fe50  Dispatcher::dispatcherThread(void*)(0x738140)
+0x2f7feb8  _SEHHandler(_EXCEPTION_RECORD*, void*, _CONTEXT*, void*)(0x47dc40)
+*****************************************************

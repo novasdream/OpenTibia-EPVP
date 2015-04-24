@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Undead Gladiator" nameDescription="a undead gladiator" race="undead" experience="800" speed="270" manacost="0">
+	<health now="1000" max="1000"/>
+	<look type="306" corpse="9823"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="-0" max="-250"/>
+		<attack name="physical" interval="1000" chance="14" range="7" min="-0" max="-135">
+			<attribute key="shootEffect" value="whirlwindsword"/>
+		</attack>
+	</attacks>
+	<defenses armor="40" defense="45">
+		<defense name="invisible" interval="5000" chance="50" duration="5000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element earthPercent="-5"/>
+		<element holyPercent="10"/>
+		<element firePercent="80"/>
+		<element energyPercent="20"/>
+		<element deathPercent="-5"/>
+	</elements>
+	<immunities>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="2500" chance="10">
+		<voice sentence="Let's battle it out in a duel!"/>
+		<voice sentence="Bring it!"/>
+		<voice sentence="I'll fight here in eternity and beyond."/>
+		<voice sentence="I will not give up!"/>
+		<voice sentence="Another foolish adventurer who tries to beat me."/>
+	</voices>
+	
+</monster>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mod name="Custom Spells" version="1.0" author="The Forgotten Server" contact="otland.net" enabled="yes">
+	<!-- Custom Runes -->
+	<rune name="Combustion" id="2276" charges="1" maglv="20" exhaustion="2000" blocktype="solid" allowfaruse="1" event="script" value="customspells/combustion.lua"/>
+
+	<!-- Custom Spells -->
+	<instant name="Apocalypse" words="exevo mas lux" lvl="40" mana="1800" exhaustion="1000" needlearn="0" event="script" value="customspells/apocalypse.lua">
+		<vocation id="1"/>
+	</instant>
+</mod>

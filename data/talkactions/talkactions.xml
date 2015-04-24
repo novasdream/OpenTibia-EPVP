@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talkactions>
+	<!-- Gods -->
+	<talkaction log="yes" words="/addskill" access="5" event="function" value="addSkill"/>
+	<talkaction log="yes" words="/attr" access="5" event="function" value="thingProporties"/>
+	<talkaction log="yes" words="/serverdiag" access="5" event="function" value="diagnostics"/>
+	<talkaction log="yes" words="/closeserver" access="5" event="script" value="closeopen.lua"/>
+	<talkaction log="yes" words="/openserver" access="5" event="script" value="closeopen.lua"/>
+	<talkaction log="yes" words="/shutdown" access="5" event="script" value="shutdown.lua"/>
+	<talkaction log="yes" words="/addshop" access="5" event="script" value="addoffer.lua"/>
+
+	<!-- Community Managers -->
+	<talkaction log="yes" words="/s" access="4" event="script" value="summon.lua"/>
+	<talkaction log="yes" words="/n" access="4" event="script" value="creature.lua"/>
+	<talkaction log="yes" words="/m" access="4" event="script" value="creature.lua"/>
+	<talkaction log="yes" words="/reload" access="4" event="script" value="reload.lua"/>
+	<talkaction log="yes" words="/raid" access="4" event="script" value="raid.lua"/>
+	<talkaction log="yes" words="/newtype" access="4" event="script" value="newtype.lua"/>
+	<talkaction log="yes" words="/r" access="4" event="script" value="remove.lua"/>
+	<talkaction log="yes" words="/i" access="4" event="script" value="createitem.lua"/>
+
+	<!-- Gamemasters -->
+	<talkaction log="yes" words="/ghost" access="3" event="function" value="ghost"/>
+	<talkaction log="yes" words="/cliport" access="3" event="script" value="gamemaster.lua"/>
+	<talkaction log="yes" words="/c" access="3" event="script" value="teleporthere.lua"/>
+	<talkaction log="yes" words="/goto" access="3" event="script" value="teleportto.lua"/>
+	<talkaction log="yes" words="/a" access="3" event="script" value="teleporttiles.lua"/>
+	<talkaction log="yes" words="/kick" access="3" event="script" value="kick.lua"/>
+	<talkaction log="yes" words="/send" access="3" event="script" value="teleportsend.lua"/>
+	<talkaction log="yes" words="/unban" access="3" event="script" value="unban.lua"/>
+	<talkaction log="yes" words="/town" access="3" event="script" value="teleporttown.lua"/>
+	<talkaction log="yes" words="/up" access="3" event="script" value="teleportfloor.lua"/>
+	<talkaction log="yes" words="/down" access="3" event="script" value="teleportfloor.lua"/>
+	<talkaction log="yes" words="/save" access="3" event="script" value="save.lua"/>
+	<talkaction log="yes" words="/clean" access="3" event="script" value="clean.lua"/>
+	<talkaction log="yes" words="/reports" access="3" event="script" value="reports.lua"/>
+	<talkaction log="yes" words="/mc" access="3" event="script" value="multicheck.lua"/>
+
+	<!-- Senior Tutors -->
+	<talkaction log="yes" words="/info" access="2" event="script" value="playerinfo.lua"/>
+	<talkaction log="yes" access="2" words="/b" event="script" value="broadcast.lua"/>
+
+	<!-- Tutors -->
+
+	<!-- Players -->
+	<talkaction words="/commands" event="script" hide="yes" value="commands.lua"/>
+	<talkaction words="/online;!online" hide="yes" event="script" value="online.lua"/>
+	<talkaction words="/uptime;!uptime" hide="yes" event="script" value="uptime.lua"/>
+	<talkaction words="/frags;!frags" event="script" value="stats.lua"/>
+	<talkaction words="/t;!t" event="script" value="teleportmaster.lua"/>
+	<talkaction words="!l" hide="yes" event="script" value="debug.lua"/>
+	
+	
+	<talkaction words="!addoffer" event="script" value="itemshop_additem.lua"/>
+	<talkaction words="!removeoffer" event="script" value="itemshop_removeitem.lua"/>
+	<talkaction words="!buyitem" event="script" value="itemshop_buy.lua"/>
+
+	<!-- Houses -->
+	<!--
+	<talkaction words="alana sio" filter="word-spaced" event="function" value="houseKick"/>
+	<talkaction words="aleta grav" filter="word-spaced" event="function" value="houseDoorList"/>
+	<talkaction words="aleta sio" filter="word-spaced" event="function" value="houseGuestList"/>
+	<talkaction words="aleta som" filter="word-spaced" event="function" value="houseSubOwnerList"/>
+	-->
+</talkactions>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<creaturescripts>
+	<event type="login" name="PlayerLogin" event="script" value="login.lua"/>
+	<event type="joinchannel" name="GuildMotd" event="script" value="guildmotd.lua"/>
+	<event type="reportbug" name="SaveReportBug" script="reportbug.lua"/>
+	<event type="think" name="Idle" event="script" value="idle.lua"/>
+	<event type="advance" name="AdvanceEffect" event="script" value="advanceeffect.lua"/>
+
+	<event type="login" name="WarLogin" event="script" value="war/login.lua"/>
+	<event type="logout" name="WarLogout" event="script" value="war/logout.lua"/>
+	<event type="preparedeath" name="WarPrepareDeath" event="script" value="war/preparedeath.lua"/>
+	<event type="statschange" name="WarStatsChange" event="script" value="war/statschange.lua"/>
+
+	<event type="login" name="BotLogin" event="script" value="bot/login.lua"/>
+	<event type="think" name="BotThink" event="script" value="bot/think.lua"/>
+	<event type="attack" name="BotAttack" event="script" value="bot/attack.lua"/>
+	<event type="kill" name="BotKill" event="script" value="bot/kill.lua"/>
+	<event type="statschange" name="BotStatsChange" event="script" value="bot/statschange.lua"/>
+</creaturescripts>

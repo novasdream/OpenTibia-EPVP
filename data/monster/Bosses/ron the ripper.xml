@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Ron the Ripper" nameDescription="Ron the Ripper" race="blood" experience="500" speed="240" manacost="0">
+	<health now="1500" max="1500"/>
+	<look type="151" head="95" body="94" legs="117" feet="97" addons="1" corpse="6080"/>
+	<targetchange interval="60000" chance="0"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag staticattack="50"/>
+		<flag lightlevel="0"/>
+		<flag lightcolor="0"/>
+		<flag targetdistance="1"/>
+		<flag runonhealth="250"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="-200" max="-250"/>
+	</attacks>
+	<defenses armor="35" defense="50"/>
+	
+</monster>
